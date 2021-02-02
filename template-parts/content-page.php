@@ -58,7 +58,7 @@
 		<?php endif; ?>
 
 		<?php if ( is_page( $page = 'contact-me' )) : ?>
-			<div class="hand">
+			<div class="hand full-page-contact">
 				<div class="finger">
 				</div>
 				<div class="finger2">

@@ -2,6 +2,10 @@
     min-height: calc(100vh - 660px);
 }
 
+.full-page-contact {
+    min-height: calc(100vh - 840px);
+}
+
 .wp-block-embed iframe {
     max-width: 100%;
     position: absolute;
@@ -164,6 +168,7 @@
     font-size: 48px;
     align-items: center;
     text-decoration: none;
+    margin-bottom: -60px;
  }
 
 .contact-link h4 {
