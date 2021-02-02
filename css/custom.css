@@ -10,10 +10,19 @@ body {
 
 /* navigation */
 
+.menu-toggle {
+    background-color: #0500FF;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    margin-bottom: 15px;
+}
+
 header {
     padding: 35px 30px;
     background-color: #F9F7E4;
     border-bottom: 1px solid #D2D2D2;
+    padding-top: 80px;
 }
 
 .menu-menu-1-container {
@@ -213,9 +222,6 @@ footer {
 
 
 @media (min-width: 768px) {
-    header {
-        padding: 35px 60px;
-    }
 
     .entry-content {
         padding: 35px 60px;
@@ -254,6 +260,12 @@ footer {
 
     .icons {
         display: block;
+    }
+}
+
+@media (min-width: 880px) {
+    header {
+        padding: 35px 60px;
     }
 }
 

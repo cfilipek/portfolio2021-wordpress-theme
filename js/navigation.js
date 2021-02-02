@@ -107,9 +107,12 @@ for (let i=0; i<menuItems.length; i++){
 const headerImg = document.querySelector('.header-img');
 const headerName = document.querySelector('.header-name');
 
-headerImg.style.display = 'none'
+if(headerImg !== null) {
+	headerImg.style.display = 'none'
+}
 
-headerName.addEventListener("mouseover", function( event ) {   
+if(headerName !== null){
+	headerName.addEventListener("mouseover", function( event ) {   
 	headerImg.style.display = 'block'
   }, false);
 
@@ -124,3 +127,8 @@ headerName.addEventListener("mouseover", function( event ) {
   headerImg.addEventListener("mouseleave", function( event ) {   
 	headerImg.style.display = 'none'
   }, false);
+}
+  
+  const menuTitle = document.querySelector('.menu-toggle');
+
+  menuTitle.innerHTML = 'menu';
