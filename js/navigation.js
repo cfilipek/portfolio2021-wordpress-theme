@@ -103,3 +103,24 @@ const menuItems = document.querySelectorAll('.menu-item a');
 for (let i=0; i<menuItems.length; i++){
 	menuItems[i].insertAdjacentHTML( 'beforebegin', `<span class="number">0${i}</span>` );
 }
+
+const headerImg = document.querySelector('.header-img');
+const headerName = document.querySelector('.header-name');
+
+headerImg.style.display = 'none'
+
+headerName.addEventListener("mouseover", function( event ) {   
+	headerImg.style.display = 'block'
+  }, false);
+
+  headerName.addEventListener("mouseleave", function( event ) {   
+	headerImg.style.display = 'none'
+  }, false);
+
+  headerImg.addEventListener("mouseover", function( event ) {   
+	headerImg.style.display = 'block'
+  }, false);
+
+  headerImg.addEventListener("mouseleave", function( event ) {   
+	headerImg.style.display = 'none'
+  }, false);
