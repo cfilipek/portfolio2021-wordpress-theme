@@ -11,7 +11,7 @@ body {
 /* navigation */
 
 header {
-    padding: 35px 60px;
+    padding: 35px 30px;
     background-color: #F9F7E4;
     border-bottom: 1px solid #D2D2D2;
 }
@@ -35,6 +35,12 @@ header {
     padding: 3px;
 }
 
+.active {
+    border: 1px solid #404040;
+    border-radius: 50%;
+    padding: 3px;
+}
+
 .menu li a {
     color: #3E3D3D;
 }
@@ -42,7 +48,7 @@ header {
 .logo {
     position: absolute;
     top: 55px;
-    left: 60px;
+    left: 30px;
 }
 
 .number {
@@ -52,7 +58,7 @@ header {
 }
 
 .entry-content {
-    padding: 35px 60px;
+    padding: 35px 30px;
     background-color: #F9F7E4;
     margin: 0;
     padding-bottom: 125px;
@@ -66,6 +72,11 @@ header {
     margin: 40px 0px;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
 .icons i {
     margin-left: 10px;
     font-size: 18px;
@@ -77,7 +88,8 @@ header {
 
 .title {
     font-family: 'Domine', serif;
-    font-size: 18px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .accent-title {
@@ -124,8 +136,9 @@ header {
 /* secondary cv section */
 
 .secondary-section {
-    padding: 35px 60px;
+    padding: 35px 30px;
     background-color: #E4F9F4;
+    padding-bottom: 85px;
 }
 
 .secondary-title {
@@ -153,7 +166,7 @@ header {
 
 footer {
     margin: 0;
-    padding: 35px 60px;
+    padding: 35px 30px;
     background-color: #F9F7E4;
     border-top: 1px solid #D2D2D2;
     font-size: 12px;
@@ -200,9 +213,32 @@ footer {
 
 
 @media (min-width: 768px) {
+    header {
+        padding: 35px 60px;
+    }
+
+    .entry-content {
+        padding: 35px 60px;
+        padding-bottom: 125px;
+    }
+
+    .logo {
+        left: 122px;
+    }
+
+    .secondary-section {
+        padding: 35px 60px;
+        padding-bottom: 85px;
+    }
+
+    footer {
+        padding: 35px 60px;
+    }
+
 
     .title {
-        font-size: 48px;
+        font-size: 42px;
+        text-align: left;
     }
 
     .cv-content {
@@ -214,6 +250,10 @@ footer {
     .cv-year {
         margin-top: -30px;
         font-size: 1.17em;
+    }
+
+    .icons {
+        display: block;
     }
 }
 
@@ -234,6 +274,7 @@ footer {
 
     .secondary-section {
         padding: 35px 122px;
+        padding-bottom: 85px;
     }
 
     .title {
@@ -262,6 +303,7 @@ footer {
 
     .secondary-section {
         padding: 35px 200px;
+        padding-bottom: 85px;
     }
 
     footer {

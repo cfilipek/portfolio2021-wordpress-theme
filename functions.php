@@ -144,8 +144,11 @@ function portfolio2021_scripts() {
 	wp_style_add_data( 'portfolio2021-style', 'rtl', 'replace' );
 
 
-		//here we load our custom.css file
-		wp_enqueue_style( 'portfolio2021-custom', get_template_directory_uri() . '/css/custom.css');
+	//here we load our custom.css file
+	wp_enqueue_style( 'portfolio2021-custom', get_template_directory_uri() . '/css/custom.css');
+
+	//here we load our custom.css file
+	wp_enqueue_style( 'portfolio2021-about', get_template_directory_uri() . '/css/about.css');
 
 	wp_enqueue_script( 'portfolio2021-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -189,6 +192,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 // Register Custom Post Type
+function add_projects() {
+
+	$labels = array(
+		'name'                  => _x( 'Projects', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Project', 'Post Type Singular Name', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                => $labels,
+		'taxonomies'            => array( 'category' ),
+		'public'                => true,
+		'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+	);
+	register_post_type( 'projects', $args );
+
+}
+add_action( 'init', 'add_projects', 0 );
+
+// Register Custom Post Type
 function add_cv() {
 
 	$labels = array(
@@ -204,3 +225,12 @@ function add_cv() {
 
 }
 add_action( 'init', 'add_cv', 0 );
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+  if (in_array('current-menu-item', $classes) ){
+    $classes[] = 'active ';
+  }
+  return $classes;
+}
