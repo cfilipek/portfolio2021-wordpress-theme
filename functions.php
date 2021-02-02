@@ -188,3 +188,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Register Custom Post Type
+function add_cv() {
+
+	$labels = array(
+		'name'                  => _x( 'Experiences', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Experience', 'Post Type Singular Name', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                => $labels,
+		'taxonomies'            => array( 'category' ),
+		'public'                => true,
+	);
+	register_post_type( 'experiences', $args );
+
+}
+add_action( 'init', 'add_cv', 0 );

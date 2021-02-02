@@ -4,12 +4,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0 !important;
+    padding: 0;
 }
 
 /* navigation */
 
 header {
-    padding: 35px 122px;
+    padding: 35px 60px;
     background-color: #F9F7E4;
     border-bottom: 1px solid #D2D2D2;
 }
@@ -27,13 +29,13 @@ header {
 }
 
 .menu li a {
-    color: #000000;
+    color: #3E3D3D;
 }
 
 .logo {
     position: absolute;
     top: 55px;
-    left: 122px;
+    left: 60px;
 }
 
 .number {
@@ -43,7 +45,7 @@ header {
 }
 
 .entry-content {
-    padding: 35px 122px;
+    padding: 35px 60px;
     background-color: #F9F7E4;
     margin: 0;
     padding-bottom: 125px;
@@ -54,6 +56,7 @@ header {
 .home-header {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .icons i {
@@ -62,7 +65,7 @@ header {
 
 .title {
     font-family: 'Domine', serif;
-    font-size: 56px;
+    font-size: 24px;
 }
 
 .accent-title {
@@ -88,6 +91,47 @@ header {
     color: #0500FF;
 }
 
+/* secondary cv section */
+
+.secondary-section {
+    padding: 35px 60px;
+    background-color: #E4F9F4;
+}
+
+.secondary-title {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.cv-title {
+    margin: 0;
+}
+
+.cv-content {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cv-company {
+    font-family: 'Domine', serif;
+    font-size: 14px;
+}
+
+.cv-year {
+    margin-top: -30px;
+}
+
+/* footer */
+
+footer {
+    margin: 0;
+    padding: 35px 60px;
+    background-color: #F9F7E4;
+    border-top: 1px solid #D2D2D2;
+    font-size: 12px;
+}
+
 @keyframes MoveUpDown {
     0%, 100% {
       bottom: 0;
@@ -96,3 +140,63 @@ header {
       bottom: 20px;
     }
   }
+
+
+@media (min-width: 768px) {
+
+    .title {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        padding: 35px 122px;
+    }
+
+    .entry-content {
+        padding: 35px 122px;
+        padding-bottom: 125px;
+    }
+
+    .logo {
+        left: 122px;
+    }
+
+    .secondary-section {
+        padding: 35px 122px;
+    }
+
+    .title {
+        font-size: 56px;
+    }
+
+    footer {
+        padding: 35px 122px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    header {
+        padding: 35px 200px;
+    }
+
+    .entry-content {
+        padding: 35px 200px;
+        padding-bottom: 125px;
+    }
+
+    .logo {
+        left: 200px;
+    }
+
+    .secondary-section {
+        padding: 35px 200px;
+    }
+
+    footer {
+        padding: 35px 200px;
+    }
+}
