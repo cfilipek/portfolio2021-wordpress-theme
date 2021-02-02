@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navigation */
+
+header {
+    padding: 35px 122px;
+    background-color: #F9F7E4;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.menu-menu-1-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    padding-left: 20px;
+    font-weight: 600;
+    display: inline-flex;
+    font-size: 14px;
+}
+
+.menu li a {
+    color: #000000;
+}
+
+.logo {
+    position: absolute;
+    top: 55px;
+    left: 122px;
+}
+
+.number {
+    float: left;
+    font-weight: 400;
+    padding-right: 5px;
+}
+
+.entry-content {
+    padding: 35px 122px;
+    background-color: #F9F7E4;
+    margin: 0;
+    padding-bottom: 125px;
+}
+
+/* header content */
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    padding-left: 5px;
+}
+
+.title {
+    font-family: 'Domine', serif;
+    font-size: 56px;
+}
+
+.accent-title {
+    color: #0500FF;
+}
+
+.home-paragraph {
+    font-family: 'Domine', serif;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.header-container {
+    position: relative;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 0;
+    font-size: 50px;
+    bottom: 0;
+    animation: MoveUpDown 2s linear infinite;
+    color: #0500FF;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 20px;
+    }
+  }
