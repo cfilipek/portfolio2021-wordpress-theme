@@ -76,8 +76,6 @@ header {
 /* header content */
 
 .home-header {
-    /* display: flex;
-    justify-content: space-between; */
     margin: 40px 0px;
 }
 
@@ -93,6 +91,10 @@ header {
 
 .icons a {
     color: #404040;
+}
+
+.icons a:hover {
+    color: #0500FF;
 }
 
 .title {

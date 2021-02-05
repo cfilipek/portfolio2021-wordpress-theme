@@ -48,6 +48,17 @@
 				<div class="proj-img"><?php the_post_thumbnail();?></div>
 				<div class="proj-text">
 					<h3 class="proj-title"><?php the_title();?></h3>
+					<div class="project-content">
+						<?php the_content();?>
+					</div>
+					<div class="project-icons">
+						<?php if( get_field('icon_one') ): ?>
+							<div class="icon"><?php the_field('icon_one'); ?></div>
+						<?php endif; ?>
+						<?php if( get_field('icon_two') ): ?>
+							<div class="icon"><?php the_field('icon_two'); ?></div>
+						<?php endif; ?>
+					</div>
 				</div>
 			</div>
 			<?php

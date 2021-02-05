@@ -129,6 +129,6 @@ if(headerName !== null){
   }, false);
 }
   
-  const menuTitle = document.querySelector('.menu-toggle');
+const menuTitle = document.querySelector('.menu-toggle');
 
-  menuTitle.innerHTML = 'menu';
+menuTitle.innerHTML = 'menu';

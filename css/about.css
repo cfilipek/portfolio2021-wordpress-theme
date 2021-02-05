@@ -40,10 +40,6 @@
     display: block;
 }
 
-/* .proj-img img {
-    width: 100%;
-} */
-
 .proj-container {
     display: block;
     background: #ffffff1a;
@@ -63,6 +59,29 @@
     height: auto;
     max-height: 400px;
     width: auto;
+}
+
+.project-content h4 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.project-icons {
+    display: flex;
+    font-size: 36px;
+}
+
+.icon i {
+    color: #0500FF;
+    margin-right: 20px;
+}
+
+.icon i:hover {
+    opacity: 0.5;
 }
 
 /* hand */
@@ -188,11 +207,4 @@
         column-gap: 20px;
         margin-bottom: 40px;
     }
-
-    /* .projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 20px;
-        column-gap: 20px;
-    } */
 }
