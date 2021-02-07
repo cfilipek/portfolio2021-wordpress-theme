@@ -29,11 +29,11 @@
 
 	<div class="secondary-section">
 		<?php if ( is_front_page() || is_page( $page = 'about' )) : ?>
-			<h1 class="title secondary-title">CV</h1>
+			<h1 class="title secondary-title hidden">CV</h1>
 			<?php query_posts( 'post_type=experiences&posts_per_page=20' ) ?>
 			<?php if (have_posts(  )) : while(have_posts(  )): the_post(  ); ?>
-			<h3 class="cv-title"><?php the_title();?></h3>
-			<div class="cv-content"><?php the_content();?></div>
+			<h3 class="cv-title hidden"><?php the_title();?></h3>
+			<div class="cv-content hidden"><?php the_content();?></div>
 			<?php
 				endwhile;
 				endif;
@@ -45,8 +45,8 @@
 			<?php if (have_posts(  )) : while(have_posts(  )): the_post(  ); ?>
 	
 			<div class="proj-container">
-				<div class="proj-img"><?php the_post_thumbnail();?></div>
-				<div class="proj-text">
+				<div class="proj-img hidden"><?php the_post_thumbnail();?></div>
+				<div class="proj-text hidden">
 					<h3 class="proj-title"><?php the_title();?></h3>
 					<div class="project-content">
 						<?php the_content();?>
